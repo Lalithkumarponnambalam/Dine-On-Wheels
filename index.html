@@ -157,8 +157,12 @@
             </div>
 
             <!-- Content below the parallax image -->
-            <div class="menu-section" data-aos="zoom-in" data-aos-duration="1500" style="justify-content: center;">
-                <div class="container d-flex flex-column align-items-center justify-content-center menu-content-section">
+            <div class="menu-section position-relative" data-aos="zoom-in" data-aos-duration="1500" style="justify-content: center;">
+                <!-- Background Image -->
+                <img src="./assets/menu-section-bg.jpg" class="w-100 position-absolute top-0 start-0 h-100" alt="menu-section-bg" style="z-index: 1; object-fit: cover;">
+            
+                <!-- Menu Content (Overlayed) -->
+                <div class="container position-relative d-flex flex-column align-items-center justify-content-center menu-content-section" style="z-index: 2;">
                     <div class="title-text mb-3 text-center">Most Popular Items</div>
             
                     <!-- Buttons for categories -->
@@ -178,7 +182,7 @@
                     </div>
             
                     <!-- Dosa Menu (Initially Visible) -->
-                    <div id="Dosa" class="menu-category mt-5">
+                    <div id="Dosa" class="menu-category mt-md-5 mt-lg-5">
                         <div class="row justify-content-center mt-5">
                             <!-- First Column of Dosa Menu -->
                             <div class="col-lg-6 col-md-6 col-12 mb-4">
@@ -288,7 +292,7 @@
                     </div>
             
                     <!-- Idli Menu (Initially Hidden) -->
-                    <div id="Idli" class="menu-category mt-5" style="display: none;">
+                    <div id="Idli" class="menu-category mt-md-5 mt-lg-5" style="display: none;">
                         <div class="row justify-content-center mt-5">
                             <!-- First Column of idli Menu -->
                             <div class="col-lg-6 col-md-6 col-12 mb-4">
@@ -342,7 +346,7 @@
                     </div>
             
                     <!-- Others Menu (Initially Hidden) -->
-                    <div id="Others" class="menu-category mt-5" style="display: none;">
+                    <div id="Others" class="menu-category mt-md-5 mt-lg-5" style="display: none;">
                         <div class="row justify-content-center">
                             <div class="col-lg-6 col-md-6 col-12 mb-4">
                                 <div class="col-12 mb-4 mt-4">
