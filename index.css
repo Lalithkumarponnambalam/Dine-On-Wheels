@@ -12,6 +12,26 @@
   font-family: 'Courier New', monospace;
 }
 
+.divide-pattern {
+  height: 5vh;
+}
+
+.menu-header-img {
+  height: 60px;
+}
+
+.menus-description {
+  color: #9370DB;
+  font-family: 'Courier New', monospace;
+  font-size: 0.85rem;
+  width: 80%;
+}
+
+.tab-icon {
+  height: 60px;
+  width: 60px;
+}
+
 .view-menu-btn {
   border: none;
   color: #fff;
@@ -295,6 +315,10 @@
   transform: scale(1.05);
 }
 
+#gallery .img-fluid.gallery-1.first-photo {
+  height: 380px;
+}
+
 /* contact us styles */
 .reach-on-button {
   padding: 10px 20px 10px 20px;
@@ -412,6 +436,15 @@
   .menu-name {
     font-size: 1rem;
   }
+
+  .menus-description {
+    width: 100%;
+  }
+
+  #gallery .img-fluid.gallery-1.first-photo {
+    height: 180px;
+  }
+  
 }
 
 /* Media query for mobile landscape view */

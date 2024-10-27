@@ -27,16 +27,18 @@
     <!-- header content section -->
     <header>
         <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-navbar py-3">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top transparent-navbar w-100">
             <div class="container">
-                <a class="navbar-brand text-white" href="#">Dine On Wheels</a>
+                <a class="navbar-brand text-white ms-3 ms-lg-0 ms-md-0" href="#">
+                    <img src="./assets/logo.png" alt="logo-png" style="height: 5vh;">
+                </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">
                         <img src="./assets/icons/menu-bar-icon.svg" alt="Menu" class="icon">
                     </span>
                 </button>
-                <div class="collapse navbar-collapse mt-4" id="navbarNav">
+                <div class="collapse navbar-collapse mt-4 mt-md-0 mt-lg-0" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#home">Home</a>
@@ -118,14 +120,15 @@
                 <div class="col-lg-6 col-md-6 col-12 mt-5 mt-md-0 mt-lg-0">
                     <img src="./assets/icons/about-icon.png" alt="about-icon" class="about-icon img-fluid"
                         data-aos="zoom-in">
-                    <div class="mt-4 title-text" data-aos="fade" data-aos-duration="2000">Welcome to Dine On Wheels
+                    <div class="mt-4 title-text" data-aos="fade" data-aos-duration="1000">Welcome to Dine On Wheels
                     </div>
                     <div class="mt-3">
-                        <img src="./assets/icons/divider-icon.png" alt="divider-icon" class="img-fluid"
+                        <img src="./assets/icons/divide-pattern.png" alt="divider-icon" class="divide-pattern"
                             data-aos="zoom-in">
                     </div>
-                    <div class="mt-3 monospace-text" data-aos="fade" data-aos-duration="2000">Our Delicious Story</div>
-                    <div class="mt-4 monospace-text" data-aos="fade" data-aos-duration="2000">
+                    <div class="mt-3 monospace-text fw-bold mt-3" data-aos="fade" data-aos-duration="1000">Our Delicious
+                        Story</div>
+                    <div class="mt-4 monospace-text" data-aos="fade" data-aos-duration="1000">
                         Dine on Wheels is more than a food truck—it's a culinary adventure on the go! We bring gourmet
                         flavors to you, turning everyday meals into unforgettable experiences.
                         <div class="mt-4">Whether at our lively spots or catering your special event, expect
@@ -148,36 +151,221 @@
                     <h1 class="text-white text-nowrap">Featured Delicacies</h1>
                     <p class="text-white mt-3">Fresh From the Grill</p>
                     <div class="mt-4 text-center">
-                        <img src="./assets/icons/divider-icon.png" alt="">
+                        <img src="./assets/icons/divide-pattern.png" alt="divide-pattern" class="divide-pattern">
                         <p class="mt-3">All Meats Are Served with House Pickles</p>
                     </div>
                 </div>
             </div>
 
             <!-- Content below the parallax image -->
-            <div class="menu-section" data-aos="zoom-out" data-aos-duration="1500">
-                <div
-                    class="container d-flex flex-column align-items-center justify-content-center menu-content-section">
-                    <div class="title-text mb-3">Most Popular Items</div>
+            <div class="menu-section" data-aos="zoom-in" data-aos-duration="1500" style="justify-content: center;">
+                <div class="container d-flex flex-column align-items-center justify-content-center menu-content-section">
+                    <div class="title-text mb-3 text-center">Most Popular Items</div>
+            
                     <!-- Buttons for categories -->
-                    <div class="mb-4 text-center">
+                    <div class="mt-4 text-center d-flex justify-content-center align-items-center">
                         <button class="border-0 bg-white mx-2" onclick="filterDishes('Dosa')">
-                            <img src="./assets/icons/tab-icon-01.png" alt="tab-icon-1" class="img-fluid">
-                            <div>Dosa</div>
+                            <img src="./assets/menus/Dosa.png" alt="tab-icon-1" class="img-fluid tab-icon">
+                            <h6 class="mt-2">Dosa</h6>
                         </button>
-                        <button class="border-0 bg-white mx-2" onclick="filterDishes('Idly')">
-                            <img src="./assets/icons/tab-icon-02.png" alt="tab-icon-2" class="img-fluid">
-                            <div>Idly</div>
+                        <button class="border-0 bg-white mx-2" onclick="filterDishes('Idli')">
+                            <img src="./assets/menus/Idly.png" alt="tab-icon-2" class="img-fluid tab-icon">
+                            <h6 class="mt-2">Idli</h6>
                         </button>
                         <button class="border-0 bg-white mx-2" onclick="filterDishes('Others')">
-                            <img src="./assets/icons/tab-icon-03.png" alt="tab-icon-3" class="img-fluid">
-                            <div>Others</div>
+                            <img src="./assets/menus/others.png" alt="tab-icon-3" class="img-fluid tab-icon">
+                            <h6 class="mt-2">Others</h6>
                         </button>
                     </div>
-
-                    <!-- Container to display dishes dynamically -->
-                    <div class="row mt-5" id="dishes-container">
-                        <!-- Dishes will be rendered here -->
+            
+                    <!-- Dosa Menu (Initially Visible) -->
+                    <div id="Dosa" class="menu-category mt-5">
+                        <div class="row justify-content-center mt-5">
+                            <!-- First Column of Dosa Menu -->
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="position-relative" style="width: 80%;">
+                                    <img src="./assets/menu-header.png" class="img-fluid w-100 menu-header-img" alt="Menu header">
+                                    <h4 class="position-absolute top-50 start-50 translate-middle text-white">Veg Dosa</h4>
+                                </div>
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Plain Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Classic crispy dosa made from fermented rice and lentil batter.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Potato Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Crispy dosa stuffed with spiced mashed potatoes for a satisfying bite.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Podi Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Spicy podi dosa, perfect with chutney and sambar for a tasty meal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Onion Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Crispy dosa loaded with savory onions for a delightful flavor.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Millet Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Nutritious millet dosa, a healthy twist on a classic favorite.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Garlic Thokku Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Flavorful garlic thokku dosa for a unique taste experience.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Second Column of Dosa Menu -->
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Ginger Thokku Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Spicy ginger thokku dosa, an aromatic delight for dosa lovers.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Tomato Thokku Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Tangy tomato thokku dosa served with chutney and sambar.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Onion Thokku Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Savory onion thokku dosa, perfect for a delicious meal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="position-relative" style="width: 80%;">
+                                    <img src="./assets/menu-header.png" class="img-fluid w-100 menu-header-img" alt="Menu header">
+                                    <h4 class="position-absolute top-50 start-50 translate-middle text-white">Non Veg Dosa</h4>
+                                </div>
+                            
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Chicken Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Delicious chicken-filled dosa, perfect for a hearty meal.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Mutton (kudal) Dosa</h4>
+                                        <p class="mb-1 menus-description">
+                                            Crispy dosa served with flavorful mutton, chutney, and sambar.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Idli Menu (Initially Hidden) -->
+                    <div id="Idli" class="menu-category mt-5" style="display: none;">
+                        <div class="row justify-content-center mt-5">
+                            <!-- First Column of idli Menu -->
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="position-relative" style="width: 80%;">
+                                    <img src="./assets/menu-header.png" class="img-fluid w-100 menu-header-img" alt="Menu header">
+                                    <h4 class="position-absolute top-50 start-50 translate-middle text-white">Veg Idli</h4>
+                                </div>
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Plain Idly</h4>
+                                        <p class="mb-1 menus-description">
+                                            Soft, steamed rice cakes served with chutney and sambar for a classic taste.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Potato Idly</h4>
+                                        <p class="mb-1 menus-description">
+                                            Fluffy idly coated with spicy podi, perfect for a savory snack.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-12 mb-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Coriander Idly</h4>
+                                        <p class="mb-1 menus-description">
+                                            Fragrant coriander idly served with chutney for a refreshing taste.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <!-- Second Column of idli Menu -->
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="position-relative" style="width: 80%;">
+                                    <img src="./assets/menu-header.png" class="img-fluid w-100 menu-header-img" alt="Menu header">
+                                    <h4 class="position-absolute top-50 start-50 translate-middle text-white">Non Veg Dosa</h4>
+                                </div>
+                            
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Chicken Idly</h4>
+                                        <p class="mb-1 menus-description">
+                                            Savory chicken idly served with chutney and sambar for a protein boost.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Others Menu (Initially Hidden) -->
+                    <div id="Others" class="menu-category mt-5" style="display: none;">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Paniyaram</h4>
+                                        <p class="mb-1 menus-description">
+                                            Crispy paniyaram served with chutney and sambar for a tasty snack.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 mb-4">
+                                <div class="col-12 mb-4 mt-4">
+                                    <div class="ms-3">
+                                        <h4 class="mb-1 menu-name">Masala paniyaram</h4>
+                                        <p class="mb-1 menus-description">
+                                            Spiced masala paniyaram, a delightful snack for any time of day.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -193,9 +381,10 @@
                 </div>
             </div>
 
-            <div class="container customer-section w-100 px-4">
+            <div class="container customer-section px-4">
                 <div class="text-center title-text">They All Love Our Food</div>
-                <div class="text-center mt-2"><img src="./assets/icons/divider-icon.png" alt=""></div>
+                <div class="text-center mt-2"><img src="./assets/icons/light-divide-pattern.png" alt="divider-icon"
+                        class="divide-pattern"></div>
                 <div class="row justify-content-center text-center mt-5">
                     <div class="col-lg-6 col-md-6 col-12 mx-auto">
                         <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
@@ -250,8 +439,8 @@
         <section id="gallery" class="pb-5 container">
             <div class="text-center title-text">Photo Gallery</div>
             <div class="row align-items-center g-0">
-                <div class="col-lg-6 col-md-6 col-6 mt-4 d-none d-lg-block d-md-block">
-                    <img src="./assets/gallery/gallery-1.jpg" alt="gallery-1" class="img-fluid gallery-1 px-3"
+                <div class="col-lg-6 col-md-6 col-12 mt-4">
+                    <img src="./assets/gallery/gallery-1.jpg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
                 <div class="col-lg-3 col-md-3 col-6 mt-4">
@@ -289,8 +478,8 @@
             <div class="row monospace-text">
                 <div class="col-12 col-md-6 col-lg-6" data-aos="fade" data-aos-duration="2000">
                     <div class="text-start title-text">Contact Us</div>
-                    <hr>
-                    <div class="fw-bold">Visit Us !</div>
+                    <img src="./assets/icons/divide-pattern.png" alt="divider-icon" class="divide-pattern mt-4">
+                    <div class="fw-bold mt-4">Visit Us !</div>
                     <div class="mt-3">Stay connected with us on social media and keep an eye on our events to catch
                         us
                         in your area. We’re
