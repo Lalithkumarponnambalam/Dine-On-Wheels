@@ -12,8 +12,12 @@
   font-family: 'Courier New', monospace;
 }
 
+.champion-text {
+  font-family: 'Champion Gothic Heavyweight';
+}
+
 .divide-pattern {
-  height: 5vh;
+  height: 3vh;
 }
 
 .menu-header-img {
@@ -25,6 +29,31 @@
   font-family: 'Courier New', monospace;
   font-size: 0.85rem;
   width: 80%;
+}
+
+.text-veg {
+  color: #9bfa02;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Champion Gothic Heavyweight';
+}
+
+.text-non-veg {
+  color: #FF5500;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Champion Gothic Heavyweight';
+}
+
+.text-thokku {
+  color: #9370DB;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: 'Champion Gothic Heavyweight';
+}
+
+.menu-name {
+  font-family: 'Courier New', monospace;
 }
 
 .tab-icon {
@@ -131,6 +160,7 @@
 
 .navbar-light .navbar-nav .nav-link {
   color: white;
+  font-family: 'Courier New', monospace;
 }
 
 /* Navbar on mobile */
@@ -162,12 +192,12 @@
 /* about section styles */
 .about-img-1 {
   height: 100%;
-  width: 92%;
+  width: 95%;
 }
 
 .about-img-2 {
   height: 80%;
-  width: 70%;
+  width: 80%;
 }
 
 .about-icon {
@@ -265,6 +295,28 @@
   width: 10%;
 }
 
+.vertical-line {
+  position: absolute;
+  top: 44%;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  border-left: 0.5px solid #C0C0C0;
+  height: 53%;
+  transform: translateX(-50%);
+}
+
+.second-vertical-line {
+  position: absolute;
+  top: 70%;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  border-left: 0.5px solid #C0C0C0;
+  height: 24%;
+  transform: translateX(-50%);
+}
+
 /* gallery styles */
 
 #myModal {
@@ -317,6 +369,15 @@
 
 #gallery .img-fluid.gallery-1.first-photo {
   height: 380px;
+  width: 100%;
+}
+
+#gallery .truck-gallery-1 {
+  height: 380px;
+}
+
+#gallery .gallery-3 {
+  height: 390px;
 }
 
 /* contact us styles */
@@ -442,9 +503,20 @@
   }
 
   #gallery .img-fluid.gallery-1.first-photo {
-    height: 180px;
+    height: 200px;
+  }
+
+  #gallery .truck-gallery-1 {
+    height: 200px;
   }
   
+  #gallery .truck-gallery-1 {
+    height: 190px;
+  }
+  
+  #gallery .gallery-3 {
+    height: 190px;
+  }
 }
 
 /* Media query for mobile landscape view */

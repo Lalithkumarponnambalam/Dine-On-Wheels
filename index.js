@@ -11,29 +11,24 @@ function updateIcon() {
     }
 }
 
-// Add event listener to the toggler
-toggler.addEventListener("click", function () {
-    updateIcon();
-});
+// Add event listener to the toggler button
+toggler.addEventListener("click", updateIcon);
 
 // Close the navbar when a link is clicked
 document.querySelectorAll(".navbar-nav .nav-link").forEach(link => {
     link.addEventListener("click", function () {
-        const collapseInstance = new bootstrap.Collapse(navbarCollapse);
-        collapseInstance.hide();
-        icon.src = "./assets/icons/menu-bar-icon.svg";
+        const collapseInstance = new bootstrap.Collapse(navbarCollapse, {
+            toggle: false, // Avoid toggling automatically
+        });
+        collapseInstance.hide(); // Close the navbar
+        icon.src = "./assets/icons/menu-bar-icon.svg"; // Reset icon to closed state
     });
 });
 
-// Also listen for when the navbar is fully hidden to update the icon
-navbarCollapse.addEventListener('hidden.bs.collapse', function () {
-    icon.src = "./assets/icons/menu-bar-icon.svg";
-});
+// Update the icon when the navbar state changes
+navbarCollapse.addEventListener("hidden.bs.collapse", updateIcon);
+navbarCollapse.addEventListener("shown.bs.collapse", updateIcon);
 
-// Listen for when the navbar is shown to update the icon
-navbarCollapse.addEventListener('shown.bs.collapse', function () {
-    icon.src = "./assets/icons/menu-bar-close-icon.svg";
-});
 
 // Add event listener to detect scroll
 window.addEventListener("scroll", function () {
