@@ -12,8 +12,9 @@
   font-family: 'Courier New', monospace;
 }
 
-.champion-text {
-  font-family: 'Champion Gothic Heavyweight';
+.anton-sc-regular {
+  font-family: "Anton SC", sans-serif;
+  font-style: normal;
 }
 
 .divide-pattern {
@@ -33,27 +34,28 @@
 
 .text-veg {
   color: #9bfa02;
-  font-weight: bold;
   font-size: 1.5rem;
-  font-family: 'Champion Gothic Heavyweight';
+  font-family: "Anton SC", sans-serif;
 }
 
 .text-non-veg {
   color: #FF5500;
-  font-weight: bold;
   font-size: 1.5rem;
-  font-family: 'Champion Gothic Heavyweight';
+  font-family: "Anton SC", sans-serif;
 }
 
 .text-thokku {
   color: #9370DB;
-  font-weight: bold;
   font-size: 1.5rem;
-  font-family: 'Champion Gothic Heavyweight';
+  font-family: "Anton SC", sans-serif;
 }
 
 .menu-name {
   font-family: 'Courier New', monospace;
+}
+
+.menu-name.text-paniyaram {
+  margin-left: -30%;
 }
 
 .tab-icon {
@@ -93,7 +95,6 @@
 }
 
 .title-text {
-  font-weight: 700;
   font-size: 2em;
 }
 
@@ -129,12 +130,10 @@
   position: absolute;
   top: 10%;
   font-size: 3em;
-  font-weight: 700;
   width: 100%;
 }
 
 .hero-sub-title {
-  font-weight: 400;
   font-size: 1.2rem;
   position: absolute;
   bottom: 20%;
@@ -213,7 +212,6 @@
   line-height: 60px;
   border-radius: 3px;
   font-size: 18px;
-  font-weight: 700;
   color: #fff;
 }
 
@@ -344,7 +342,6 @@
   right: 35px;
   color: white;
   font-size: 40px;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -457,7 +454,6 @@
   position: absolute;
   color: rgb(255, 255, 255);
   width: 120px;
-  font-weight: 600;
   opacity: 0;
   transition-duration: 0.4s;
 }
@@ -471,13 +467,11 @@
   .header-title {
     top: 10%;
     font-size: 2em;
-    font-weight: 700;
     position: absolute;
     width: 100%;
   }
 
   .title-text {
-    font-weight: 700;
     font-size: 1.5em;
   }
 
@@ -516,6 +510,10 @@
   
   #gallery .gallery-3 {
     height: 190px;
+  }
+
+  .menu-name.text-paniyaram {
+    margin-left: 0%;
   }
 }
 

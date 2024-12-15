@@ -17,6 +17,10 @@
     <!-- AOS JavaScript -->
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Gothic+A1&display=swap" rel="stylesheet">
+
     <!-- External CSS -->
     <link rel="stylesheet" href="./index.css">
 </head>
@@ -67,11 +71,11 @@
                 </video>
                 <div class="header-content text-white">
                     <div class="text-center" style="width: 100%;">
-                        <div class="header-title champion-text mt-4 text-center d-lg-block d-md-block d-none"
+                        <div class="header-title anton-sc-regular mt-4 text-center d-lg-block d-md-block d-none"
                             data-aos="fade" data-aos-duration="2000">
                             FEELING HUNGRY ? DINE ON WHEELS !
                         </div>
-                        <div class="header-title mt-4 text-center d-lg-none d-md-none" data-aos="fade"
+                        <div class="header-title anton-sc-regular mt-4 text-center d-lg-none d-md-none" data-aos="fade"
                             data-aos-duration="2000">
                             FEELING HUNGRY ? <div>DINE ON WHEELS !</div>
                         </div>
@@ -119,7 +123,7 @@
                 <div class="col-lg-6 col-md-6 col-12 mt-5 mt-md-0 mt-lg-0">
                     <img src="./assets/icons/about-icon.png" alt="about-icon" class="about-icon img-fluid"
                         data-aos="zoom-in">
-                    <div class="mt-4 title-text champion-text" data-aos="fade" data-aos-duration="1000">Welcome to Dine
+                    <div class="mt-4 title-text anton-sc-regular" data-aos="fade" data-aos-duration="1000">Welcome to Dine
                         On Wheels
                     </div>
                     <div class="mt-3">
@@ -148,7 +152,7 @@
             <!-- Parallax Section with Heading -->
             <div class="parallax">
                 <div class="parallax-content d-flex flex-column justify-content-center align-items-center">
-                    <h1 class="text-white text-nowrap champion-text">Featured Delicacies</h1>
+                    <h1 class="text-white text-nowrap anton-sc-regular">Featured Delicacies</h1>
                     <p class="text-white mt-3 monospace-text">Fresh From the Grill</p>
                     <div class="mt-4 text-center">
                         <img src="./assets/icons/truck white_1.png" alt="divide-pattern" class="divide-pattern">
@@ -166,26 +170,26 @@
                 <!-- Menu Content (Overlayed) -->
                 <div class="container position-relative d-flex flex-column align-items-center justify-content-center menu-content-section"
                     style="z-index: 2;">
-                    <div class="title-text mb-3 text-center champion-text">Most Popular Items</div>
+                    <div class="title-text mb-3 text-center anton-sc-regular">Most Popular Items</div>
 
                     <!-- Buttons for categories -->
                     <div class="mt-4 text-center d-flex justify-content-center align-items-center">
                         <button class="border-0 bg-transparent mx-2" onclick="filterDishes('Dosa')">
                             <img src="./assets/menus/Dosa.png" alt="tab-icon-1" class="img-fluid tab-icon">
-                            <h6 class="mt-2 champion-text">Dosa</h6>
+                            <h6 class="mt-2 monospace-text">Dosa</h6>
                         </button>
                         <button class="border-0 bg-transparent mx-2" onclick="filterDishes('Idli')">
                             <img src="./assets/menus/Idly.png" alt="tab-icon-2" class="img-fluid tab-icon">
-                            <h6 class="mt-2 champion-text">Idli</h6>
+                            <h6 class="mt-2 monospace-text">Idli</h6>
                         </button>
                         <button class="border-0 bg-transparent mx-2" onclick="filterDishes('Others')">
                             <img src="./assets/menus/others.png" alt="tab-icon-3" class="img-fluid tab-icon">
-                            <h6 class="mt-2 champion-text">Others</h6>
+                            <h6 class="mt-2 monospace-text">Others</h6>
                         </button>
                     </div>
 
                     <!-- Dosa Menu (Initially Visible) -->
-                    <div id="Dosa" class="menu-category mt-md-5 mt-lg-5">
+                    <div id="Dosa" class="menu-category mt-5">
                         <div class="row justify-content-center">
                             <!-- First Column of Dosa Menu -->
                             <div class="col-lg-6 col-md-6 col-12 mb-4 text-lg-end text-md-end text-start">
@@ -262,7 +266,7 @@
                     </div>
 
                     <!-- Idli Menu (Initially Hidden) -->
-                    <div id="Idli" class="menu-category mt-md-5 mt-lg-5" style="display: none;">
+                    <div id="Idli" class="menu-category mt-5" style="display: none;">
                         <div class="row justify-content-center">
 
                             <!-- First Column of idli Menu -->
@@ -311,7 +315,7 @@
                     </div>
 
                     <!-- Others Menu (Initially Hidden) -->
-                    <div id="Others" class="menu-category mt-md-5 mt-lg-5" style="display: none;">
+                    <div id="Others" class="menu-category mt-5" style="display: none;">
                         <div class="row justify-content-center">
 
                             <!-- First Column of idli Menu -->
@@ -327,7 +331,7 @@
                                 </div>
                                 <div class="col-12 mb-2">
                                     <div class="me-4">
-                                        <h5 class="mb-1 menu-name">Masala Paniyaram</h5>
+                                        <h5 class="mb-1 menu-name text-paniyaram">Masala Paniyaram</h5>
                                     </div>
                                 </div>
                             </div>
@@ -357,13 +361,13 @@
             <div class="parallax-2">
                 <div class="parallax-content d-flex flex-column justify-content-center align-items-center">
                     <img src="./assets/icons/" alt="">
-                    <h1 class="text-white champion-text">Happy Hours</h1>
-                    <p class="text-white monospace-text">Every day 08:00 pm – 12:00 pm</p>
+                    <h1 class="text-white anton-sc-regular">Happy Hours</h1>
+                    <p class="text-white monospace-text">Every day 06:00 pm – 11:00 pm</p>
                 </div>
             </div>
 
             <div class="container customer-section px-4">
-                <div class="text-center title-text champion-text">They All Love Our Food</div>
+                <div class="text-center title-text anton-sc-regular">They All Love Our Food</div>
                 <div class="text-center mt-2"><img src="./assets/icons/divide-pattern.png" alt="divider-icon"
                         class="divide-pattern"></div>
                 <div class="row justify-content-center text-center mt-5">
@@ -430,7 +434,7 @@
 
         <!-- photo gallery Section -->
         <section id="gallery" class="pb-5 container">
-            <div class="text-center title-text champion-text">Photo Gallery</div>
+            <div class="text-center title-text anton-sc-regular">Photo Gallery</div>
             <div class="row align-items-center g-0">
                 <div class="col-lg-6 col-md-6 col-12 mt-4">
                     <img src="./assets/gallery/gallery-1.jpeg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
@@ -457,23 +461,23 @@
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 mt-4">
-                    <img src="/assets/gallery/gallery-1.jpeg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
-                        onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
-                </div>
-                <div class="col-lg-6 col-md-6 col-12 mt-4">
-                    <img src="/assets/gallery/gallery-7.jpeg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
+                    <img src="/assets/gallery/gallery-7.jpg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
                 <div class="col-lg-6 col-md-6 col-12 mt-4">
                     <img src="/assets/gallery/gallery-8.jpeg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
-                <div class="col-lg-3 col-md-3 col-6 mt-4">
-                    <img src="/assets/gallery/gallery-9.jpeg" alt="gallery-2" class="img-fluid gallery-2 px-3"
+                <div class="col-lg-6 col-md-6 col-12 mt-4">
+                    <img src="/assets/gallery/gallery-9.jpeg" alt="gallery-1" class="img-fluid gallery-1 first-photo px-3"
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
                 <div class="col-lg-3 col-md-3 col-6 mt-4">
-                    <img src="/assets/gallery/gallery-10.jpeg" alt="gallery-3" class="img-fluid gallery-2 px-3"
+                    <img src="/assets/gallery/gallery-10.jpeg" alt="gallery-2" class="img-fluid gallery-2 px-3"
+                        onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
+                </div>
+                <div class="col-lg-3 col-md-3 col-6 mt-4">
+                    <img src="/assets/gallery/gallery-11.jpeg" alt="gallery-3" class="img-fluid gallery-2 px-3"
                         onclick="openModal(this)" data-aos="zoom-in" data-aos-duration="1500">
                 </div>
             </div>
@@ -490,7 +494,7 @@
         <section id="contact" class="py-5 container">
             <div class="row monospace-text">
                 <div class="col-12 col-md-6 col-lg-6" data-aos="fade" data-aos-duration="2000">
-                    <div class="text-start title-text champion-text">Contact Us</div>
+                    <div class="text-start title-text anton-sc-regular">Contact Us</div>
                     <img src="./assets/icons/divide-pattern.png" alt="divider-icon" class="divide-pattern mt-4">
                     <div class="fw-bold mt-4">Visit Us !</div>
                     <div class="mt-3">Stay connected with us on social media and keep an eye on our events to catch
