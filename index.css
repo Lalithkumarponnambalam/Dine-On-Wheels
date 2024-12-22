@@ -57,8 +57,12 @@
   font-family: 'Courier New', monospace;
 }
 
-.menu-name.text-paniyaram {
-  margin-left: -30%;
+.menu-name.text-uttapam {
+  margin-left: -10%;
+}
+
+.menu-name.long-text {
+  margin-right: -13%;
 }
 
 .tab-icon {
@@ -69,7 +73,7 @@
 .view-menu-btn {
   border: none;
   color: #fff;
-  background-image: linear-gradient(30deg, #9370DB, #9370DB);
+  background-image: linear-gradient(30deg, #FBB03B, #FBB03B);
   border-radius: 40px;
   background-size: 100% auto;
   font-size: 17px;
@@ -85,7 +89,7 @@
 
 @keyframes pulse512 {
   0% {
-    box-shadow: 0 0 0 0 #9370DB;
+    box-shadow: 0 0 0 0 #FBB03B;
   }
 
   70% {
@@ -220,7 +224,7 @@
 
 /* Parallax styles */
 .parallax {
-  background-image: url("./assets/parallax-1.jpg");
+  background-image: url("./assets/parallax-1.jpeg");
   min-height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -233,7 +237,7 @@
 }
 
 .parallax-2 {
-  background-image: url("./assets/parallax-2.jpg");
+  background-image: url("./assets/parallax-2.jpeg");
   min-height: 600px;
   background-attachment: fixed;
   background-position: center;
@@ -298,23 +302,23 @@
 
 .vertical-line {
   position: absolute;
-  top: 44%;
+  top: 45%;
   bottom: 0;
   left: 50%;
   width: 0;
   border-left: 0.5px solid #C0C0C0;
-  height: 53%;
+  height: 50%;
   transform: translateX(-50%);
 }
 
 .second-vertical-line {
   position: absolute;
-  top: 70%;
+  top: 65%;
   bottom: 0;
   left: 50%;
   width: 0;
   border-left: 0.5px solid #C0C0C0;
-  height: 24%;
+  height: 25%;
   transform: translateX(-50%);
 }
 
@@ -389,6 +393,11 @@
 }
 
 /* footer styles */
+
+footer {
+  background: linear-gradient(to right, #FBB03B 75%, #988DF1 25%);
+}
+
 .social-media-btn {
   border-radius: 50%;
   width: 35px;
@@ -515,8 +524,11 @@
     height: 190px;
   }
 
-  .menu-name.text-paniyaram {
+  .menu-name.text-uttapam {
     margin-left: 0%;
+  }
+  .menu-name.long-text {
+    margin-right: -0%;
   }
 }
 

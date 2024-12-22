@@ -79,11 +79,11 @@ function navigateToWhatsApp(phoneNumber) {
 document
   .getElementById("whatsappReachBtn")
   .addEventListener("click", function () {
-    navigateToWhatsApp("8124006335");
+    navigateToWhatsApp("9385514851");
   });
 
 document.getElementById("whatsAppBtn").addEventListener("click", function () {
-  navigateToWhatsApp("8124006335");
+  navigateToWhatsApp("9385514851");
 });
 
 document.getElementById("instagramBtn").addEventListener("click", function () {
