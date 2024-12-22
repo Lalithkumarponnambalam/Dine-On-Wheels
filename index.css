@@ -33,21 +33,24 @@
 }
 
 .text-veg {
-  color: #9bfa02;
+  color: #90EE90;
   font-size: 1.5rem;
-  font-family: "Anton SC", sans-serif;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
 }
 
 .text-non-veg {
   color: #FF5500;
   font-size: 1.5rem;
-  font-family: "Anton SC", sans-serif;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
 }
 
 .text-thokku {
   color: #9370DB;
   font-size: 1.5rem;
-  font-family: "Anton SC", sans-serif;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
 }
 
 .menu-name {
