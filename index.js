@@ -40,7 +40,8 @@ window.addEventListener("scroll", function () {
   }
 });
 
-var map = L.map("map").setView([51.505, -0.09], 13);
+// Initialize the map and set its view to the desired location
+var map = L.map("map").setView([11.159222, 77.354056], 13);
 
 // Load and display OpenStreetMap tiles
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -48,7 +49,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 }).addTo(map);
 
 // Add a marker at the desired location
-L.marker([51.505, -0.09])
+L.marker([11.159222, 77.354056])
   .addTo(map)
   .bindPopup("A marker on this location.")
   .openPopup();
