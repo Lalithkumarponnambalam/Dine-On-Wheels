@@ -527,8 +527,21 @@ footer {
   .menu-name.text-uttapam {
     margin-left: 0%;
   }
+
   .menu-name.long-text {
     margin-right: -0%;
+  }
+
+  .customer-text {
+    font-size: 1rem;
+  }
+
+  .carousel-control-prev {
+    margin-left: -8%;
+  }
+
+  .carousel-control-next {
+    margin-right: -8%;
   }
 }
 
